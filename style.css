@@ -261,6 +261,14 @@ a {
 
 
 @media only screen and (max-width:600px) {
+    .nav-bar {
+        padding-bottom: 3%;
+        width: 40rem;
+    }
+    .btn-signIn{
+        position: relative;
+        right: 35%;
+    }
     .select-sem-cycle{
         font-weight: bold;
         color:rgb(0, 25, 98);
