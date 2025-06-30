@@ -311,6 +311,10 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+.version {
+    color: rgb(158, 157, 157);
+    font-size: small;
+}
 .Accounts {
     background-color: rgb(53, 53, 53);
     width: 22rem;
