@@ -273,7 +273,7 @@ a {
         font-weight: bold;
         color:rgb(0, 25, 98);
         position: absolute;
-        top: 36%;
+        top: 25%;
         left: 16%;
         font-size:2rem;
     }
@@ -284,7 +284,6 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-background-color: aquamarine;
     }
     .pdf-div {
     overflow-y: scroll;
@@ -331,16 +330,16 @@ header {
 }
 #note1{
     position: absolute; 
-    top: 47%; 
+    top: 37%; 
 }
 #note2 {
     position: absolute; 
-    top: 54%; 
+    top: 45%; 
 }
 #emailid {
     font-size:1.5rem; 
     position: absolute;
-    top: 59%;
+    top: 52%;
     margin-top: 6%;
  }
 .github {
