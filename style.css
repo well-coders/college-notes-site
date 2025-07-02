@@ -336,7 +336,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    display: none;
+    /* display: none; */
 }
 #note1{
     position: absolute; 
@@ -521,7 +521,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    display: none;
+    /* display: none; */
 }
 #note1{
     position: absolute; 
