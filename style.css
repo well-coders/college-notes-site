@@ -81,7 +81,7 @@ header {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     position: absolute;
-    top: 20%;
+    top: 26%;
     left:37%;
     display: flex;
     flex-direction: column;
@@ -152,7 +152,7 @@ header {
 .pdf-div {
     overflow-y: scroll;
     width: 32rem;
-    height: 38rem;
+    height: 41rem;
     background-color: rgb(255, 255, 255);
     position: absolute;
     top: 3%;
@@ -210,6 +210,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 20px;
     /* justify-content: center; */
     /* display: none; */
 }
