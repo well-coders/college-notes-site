@@ -60,7 +60,6 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 .select-bar select{
     font-size: large;
     display: flex;
@@ -71,13 +70,74 @@ header {
     border-radius: 1rem;
     background-color: rgb(198, 158, 102);
 }
+.caution {
+    width: 30rem;
+    height: 40rem;
+    background-color: rgb(245, 242, 237);
+    color:rgb(0, 25, 98);
+    border:  2px solid rgb(0, 25, 98);
+    /* border-top: 2px solid rgb(0, 25, 98);
+    border-bottom:  2px solid rgb(0, 25, 98); */
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 20%;
+    left:37%;
+    display: flex;
+    flex-direction: column;
+}
+
 .select-sem-cycle{
     font-weight: bold;
     color:rgb(0, 25, 98);
+    font-size:1.3rem;
+}
+#notes-and-qb-in-fp{
+    color:rgb(198, 158, 102);
+    font-size: 1.6rem;
     position: absolute;
-    top: 40%;
-    left: 36%;
-    font-size:1.9rem;
+    top: 4%;
+    left: 5%;
+}
+#select-semcycle{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+#mismatch-pdf{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
+#note1{
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    font-size:1.3rem; 
+    color:rgb(0, 25, 98);
+
+}
+#note2 {
+    position: absolute;
+    left: 3%;
+    top: 60%;
+    font-size:1.3rem; 
+    color:rgb(0, 25, 98);
+}
+
+#emailid {
+    position: absolute;
+    left: 12%;
+    top: 70%;
+    font-size:1.3rem; 
+ }
+
+#about-copyright {
+    position:absolute;
+    left: 12%;
+    bottom: 0;
+    font-size: large; 
+
 }
 .content{
     width: 35rem;
@@ -102,25 +162,7 @@ header {
     flex-direction: column;
     padding-left: 30px;
 }
-#note1{
-    font-size:1.5rem; 
-    position: absolute; 
-    top: 47%; 
-    color: red;
-}
-#note2 {
-    font-size:1.5rem; 
-    position: absolute; 
-    top: 54%; 
-    color: red;
-}
 
-#emailid {
-    font-size:1.5rem; 
-    position: absolute;
-     top: 50%;
-     margin-top: 6%;
- }
 #sem1-Ecycle{
     display: none;
 }
@@ -235,6 +277,11 @@ a {
     top: 25%;
     margin-bottom: 20px;
 }
+.enquary {
+    color: #ffffffa8;
+    position: relative;
+    top: 30%;
+}
 .Accounts a{
     color: rgba(255, 255, 255, 0.644);
 }
@@ -244,11 +291,7 @@ a {
     position: relative;
     top: 25%;
 }
-.enquary {
-    color: #ffffffa8;
-    position: relative;
-    top: 30%;
-}
+
 .Follow-us{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
@@ -258,21 +301,35 @@ a {
     position: relative;
     top: 15%;
 }
-#about-copyright {
-    font-size: medium; 
-    position: absolute;
-    top: 75%; 
-    left: 6%;
-}
+
+
+
 
 @media only screen and (max-width:600px) {
     .nav-bar {
         padding-bottom: 3%;
+        height: 3rem;
         width: 40rem;
     }
-    .btn-signIn{
+    header {
         position: relative;
-        right: 35%;
+        bottom: 20%;
+    }
+    .nav-bar h2{
+        font-size: 20px;
+    }
+    .btn-signIn{
+        width: 6.2rem;
+        height: 2.2rem;
+        border-radius: 2rem;
+        position: relative;
+        right: 40%;
+    }
+    #sem {
+        height: 3rem;
+    }
+    #cycle {
+        height: 3rem;
     }
     .select-sem-cycle{
         font-weight: bold;
@@ -283,25 +340,87 @@ a {
         font-size:1.5rem;
     }
 
-    .caution{
-        width: 20rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    .caution {
+    width: 22rem;
+    height: 30rem;
+    background-color: rgb(245, 242, 237);
+    color:rgb(0, 25, 98);
+    border:  2px solid rgb(0, 25, 98);
+    /* border-top: 2px solid rgb(0, 25, 98);
+    border-bottom:  2px solid rgb(0, 25, 98); */
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 28%;
+    left:7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.select-sem-cycle{
+    font-weight: bold;
+    color:rgb(0, 25, 98);
+    font-size:1rem;
+}
+#notes-and-qb-in-fp{
+    color:rgb(198, 158, 102);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+}
+#select-semcycle{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+#mismatch-pdf{
+    position: absolute;
+    top: 24%;
+    left: 5%;
+}
+#note1{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    font-size:1rem; 
+    color:rgb(0, 25, 98);
+
+}
+#note2 {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    font-size:1rem; 
+    color:rgb(0, 25, 98);
+}
+
+#emailid {
+    position: absolute;
+    left: 12%;
+    top: 55%;
+    font-size:1rem; 
+ }
+
+#about-copyright {
+    position:absolute;
+    left: 7%;
+    top: 70%;
+    font-size: small; 
+
+}
     .pdf-div {
     overflow-y: scroll;
-    width: 32rem;
-    height: 38rem;
+    width: 30rem;
+    height: 35rem;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: -3%;
-    left: 60%;
+    top: -12%;
+    left: 61%;
     transform: translate(-50%);
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+    padding-left: 10px;
     }
     a{
     font-size: 15px;
@@ -338,22 +457,6 @@ header {
     align-items: center;
     /* display: none; */
 }
-#note1{
-    position: absolute; 
-    font-size: 20px;
-    top: 40%; 
-}
-#note2 {
-    font-size: 20px;
-    position: absolute; 
-    top: 48%; 
-}
-#emailid {
-    font-size:1.5rem; 
-    position: absolute;
-    top: 52%;
-    margin-top: 6%;
- }
 .github {
     display: flex;
     align-items: center;
@@ -453,11 +556,28 @@ header {
 @media only screen and (max-width:360px) {
     .nav-bar {
         padding-bottom: 3%;
+        height: 3rem;
         width: 40rem;
     }
-    .btn-signIn{
+    header {
         position: relative;
-        right: 45%;
+        bottom: 20%;
+    }
+    .nav-bar h2{
+        font-size: 20px;
+    }
+    .btn-signIn{
+        width: 6rem;
+        height: 2rem;
+        border-radius: 2rem;
+        position: relative;
+        right: 49%;
+    }
+    #sem {
+        height: 3rem;
+    }
+    #cycle {
+        height: 3rem;
     }
     .select-sem-cycle{
         font-weight: bold;
@@ -468,21 +588,83 @@ header {
         font-size:1.5rem;
     }
 
-    .caution{
-        width: 20rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    .caution {
+    width: 22rem;
+    height: 30rem;
+    background-color: rgb(245, 242, 237);
+    color:rgb(0, 25, 98);
+    border:  2px solid rgb(0, 25, 98);
+    /* border-top: 2px solid rgb(0, 25, 98);
+    border-bottom:  2px solid rgb(0, 25, 98); */
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 28%;
+    left:7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.select-sem-cycle{
+    font-weight: bold;
+    color:rgb(0, 25, 98);
+    font-size:1rem;
+}
+#notes-and-qb-in-fp{
+    color:rgb(198, 158, 102);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+}
+#select-semcycle{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+#mismatch-pdf{
+    position: absolute;
+    top: 24%;
+    left: 5%;
+}
+#note1{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    font-size:1rem; 
+    color:rgb(0, 25, 98);
+
+}
+#note2 {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    font-size:1rem; 
+    color:rgb(0, 25, 98);
+}
+
+#emailid {
+    position: absolute;
+    left: 12%;
+    top: 55%;
+    font-size:1rem; 
+ }
+
+#about-copyright {
+    position:absolute;
+    left: 7%;
+    top: 70%;
+    font-size: small; 
+
+}
     .pdf-div {
     overflow-y: scroll;
     width: 30rem;
     height: 35rem;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: -3%;
-    left: 63%;
+    top: -12%;
+    left: 62%;
     transform: translate(-50%);
     display: flex;
     flex-direction: column;
@@ -511,38 +693,19 @@ header {
 }
 .Accounts {
     background-color: rgb(53, 53, 53);
-    width: 24rem;
+    width: 20rem;
     height: 34rem;
     z-index: 2;
     position: absolute;
     top: 16%;
-    left: 9%;
+    left: 12%;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* display: none; */
 }
-#note1{
-    position: absolute; 
-    font-size: 20px;
-    top: 47%; 
-}
-#note2 {
-    font-size: 20px;
-    position: absolute; 
-    top: 55%; 
-}
-#emailid {
-    font-size:1.5rem; 
-    position: absolute;
-    top: 60%;
-    margin-top: 6%;
- }
-#about-copyright {
-    position: absolute;
-    top: 77%;
-}
+
 .github {
     display: flex;
     align-items: center;
@@ -609,9 +772,10 @@ header {
     top: 25%;
 }
 .enquary {
+    font-size: small;
     color: #ffffffa8;
     position: relative;
-    top: 30%;
+    top: 25%;
 }
 .Follow-us{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
