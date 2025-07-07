@@ -4,6 +4,7 @@ const sem1EcycleDiv = document.getElementById("sem1-Ecycle");
 const sem1PcycleDiv = document.getElementById("sem1-Pcycle");
 const sem2EcycleDiv = document.getElementById("sem2-Ecycle");
 const sem2PcycleDiv = document.getElementById("sem2-Pcycle");
+const caution_div = document.querySelector(".caution")
 
         // <!-- 1 st sem E cycle -->
 
@@ -110,3 +111,14 @@ function disable_account_screen(){
         account_section.style.display = "none";
     }
 close_btn.addEventListener("click",disable_account_screen)
+
+function display_caution(){
+    if(semSelect.value!=null || cycleSelect.value!=null){
+        caution_div.style.display="none";
+    }
+    if(semSelect.value=="Select" || cycleSelect.value=="Select") {
+        caution_div.style.display="block";
+    }
+}
+semSelect.addEventListener("change", display_caution);
+cycleSelect.addEventListener("change", display_caution);

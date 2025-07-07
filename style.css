@@ -413,10 +413,10 @@ a {
     .pdf-div {
     overflow-y: scroll;
     width: 30rem;
-    height: 35rem;
+    height: 40rem;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: -12%;
+    top: -5%;
     left: 61%;
     transform: translate(-50%);
     display: flex;
@@ -661,7 +661,7 @@ header {
     .pdf-div {
     overflow-y: scroll;
     width: 30rem;
-    height: 35rem;
+    height: 25rem;
     background-color: rgb(255, 255, 255);
     position: absolute;
     top: -12%;
